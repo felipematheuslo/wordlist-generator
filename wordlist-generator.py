@@ -1,10 +1,10 @@
+# -*- coding: utf-8 -*-
 """
-WPA Key--
-The shared secret key for WPA Personal security.
-Enter a string of at least 8 characters to a maximum of 63 characters.
-Acceptable characters include upper and lower case alphabetic letters,
-the numeric digits, and special symbols such as @ and #.
+Created on Jan 22 2024
+@author: Felipe Laurindo
 """
+# pip3 install tqdm
+from tqdm import tqdm
 
 characters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
               "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x",
@@ -13,9 +13,18 @@ characters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
               "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7",
               "8", "9", "!", "@", "#", "$", "%", "&", "*", "_", "-", "."]
 
-for x7 in range(len(characters)):
-    for x8 in range(len(characters)):
-        word = characters[x7] + characters[x8]
-        with open('wordlist.txt', 'a') as f:
-            f.write(word)
-            f.write('\n')
+with tqdm(total=100) as bar:
+    for x1 in range(len(characters)):
+        for x2 in range(len(characters)):
+            for x3 in range(len(characters)):
+                for x4 in range(len(characters)):
+                    for x5 in range(len(characters)):
+                        for x6 in range(len(characters)):
+                            for x7 in range(len(characters)):
+                                for x8 in range(len(characters)):
+                                    word = characters[x1] + characters[x2] + characters[x3] + characters[x4] + characters[x5] + characters[x6] + characters[x7] + characters[x8]
+                                    print(word)
+                                    bar.update(1/pow(72, 8))
+                                    with open('wordlist.txt', 'a') as f:
+                                        f.write(word)
+                                        f.write('\n')
