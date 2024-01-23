@@ -1,5 +1,5 @@
 ## Sobre o script
-Script desenvolvido em Python com o propósito de criar um arquivo de texto contendo todas as palavras de 8 caracteres, formadas a partir da combinação de uma lista de caracteres.
+Script desenvolvido em Python com o propósito de criar um arquivo de texto contendo todas as palavras de comprimento 8, formadas a partir da combinação de uma lista de caracteres.
 
 A biblioteca `tqdm` foi utilizada para mostrar barra de progresso.
 
