@@ -1,6 +1,8 @@
 ## Sobre o script
 Script desenvolvido em Python com o propósito de criar um arquivo de texto contendo todas as palavras de 8 caracteres, formadas a partir da combinação de uma lista de caracteres.
 
+A biblioteca `tqdm` foi utilizada para mostrar barra de progresso.
+
 ### Exemplo de lista
 ```
 characters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
